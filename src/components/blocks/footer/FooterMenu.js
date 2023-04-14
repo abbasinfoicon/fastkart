@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const FooterMenu = () => {
     return (
@@ -10,24 +11,12 @@ const FooterMenu = () => {
 
                 <div className="footer-contain">
                     <ul>
-                        <li>
-                            <a href="shop-left-sidebar.html" className="text-content">Vegetables & Fruit</a>
-                        </li>
-                        <li>
-                            <a href="shop-left-sidebar.html" className="text-content">Beverages</a>
-                        </li>
-                        <li>
-                            <a href="shop-left-sidebar.html" className="text-content">Meats & Seafood</a>
-                        </li>
-                        <li>
-                            <a href="shop-left-sidebar.html" className="text-content">Frozen Foods</a>
-                        </li>
-                        <li>
-                            <a href="shop-left-sidebar.html" className="text-content">Biscuits & Snacks</a>
-                        </li>
-                        <li>
-                            <a href="shop-left-sidebar.html" className="text-content">Grocery & Staples</a>
-                        </li>
+                        <li><Link to="/product" className="text-content">Vegetables & Fruit</Link></li>
+                        <li><Link to="/product" className="text-content">Beverages</Link></li>
+                        <li><Link to="/product" className="text-content">Meats & Seafood</Link></li>
+                        <li><Link to="/product" className="text-content">Frozen Foods</Link></li>
+                        <li><Link to="/product" className="text-content">Biscuits & Snacks</Link></li>
+                        <li><Link to="/product" className="text-content">Grocery & Staples</Link></li>
                     </ul>
                 </div>
             </div>
@@ -39,21 +28,11 @@ const FooterMenu = () => {
 
                 <div className="footer-contain">
                     <ul>
-                        <li>
-                            <a href="index.html" className="text-content">Home</a>
-                        </li>
-                        <li>
-                            <a href="shop-left-sidebar.html" className="text-content">Shop</a>
-                        </li>
-                        <li>
-                            <a href="about-us.html" className="text-content">About Us</a>
-                        </li>
-                        <li>
-                            <a href="blog-list.html" className="text-content">Blog</a>
-                        </li>
-                        <li>
-                            <a href="contact-us.html" className="text-content">Contact Us</a>
-                        </li>
+                        <li><Link to="/" className="text-content">Home</Link></li>
+                        <li><Link to="/product" className="text-content">Shop</Link></li>
+                        <li><Link to="/about" className="text-content">About Us</Link></li>
+                        <li><Link to="/blog" className="text-content">Blog</Link></li>
+                        <li><Link to="/contact" className="text-content">Contact Us</Link></li>
                     </ul>
                 </div>
             </div>
@@ -65,24 +44,12 @@ const FooterMenu = () => {
 
                 <div className="footer-contain">
                     <ul>
-                        <li>
-                            <a href="order-success.html" className="text-content">Your Order</a>
-                        </li>
-                        <li>
-                            <a href="user-dashboard.html" className="text-content">Your Account</a>
-                        </li>
-                        <li>
-                            <a href="order-tracking.html" className="text-content">Track Order</a>
-                        </li>
-                        <li>
-                            <a href="wishlist.html" className="text-content">Your Wishlist</a>
-                        </li>
-                        <li>
-                            <a href="search.html" className="text-content">Search</a>
-                        </li>
-                        <li>
-                            <a href="faq.html" className="text-content">FAQ</a>
-                        </li>
+                        <li><Link to="/" className="text-content">Your Order</Link></li>
+                        <li><Link to="/login" className="text-content">Your Account</Link></li>
+                        <li><Link to="/" className="text-content">Track Order</Link></li>
+                        <li><Link to="/" className="text-content">Your Wishlist</Link></li>
+                        <li><Link to="/" className="text-content">Search</Link></li>
+                        <li><Link to="/" className="text-content">FAQ</Link></li>
                     </ul>
                 </div>
             </div>
@@ -117,18 +84,8 @@ const FooterMenu = () => {
                         <li className="social-app mb-0">
                             <h5 className="mb-2 text-content">Download App :</h5>
                             <ul>
-                                <li className="mb-0">
-                                    <a href="https://play.google.com/store/apps" target="_blank">
-                                        <img src="https://themes.pixelstrap.com/fastkart/assets/images/playstore.svg" className="blur-up lazyload"
-                                            alt="" />
-                                    </a>
-                                </li>
-                                <li className="mb-0">
-                                    <a href="https://www.apple.com/in/app-store/" target="_blank">
-                                        <img src="https://themes.pixelstrap.com/fastkart/assets/images/appstore.svg" className="blur-up lazyload"
-                                            alt="" />
-                                    </a>
-                                </li>
+                                <li className="mb-0"><Link to="/" target="_blank"><img src="./assets/images/playstore.svg" className="blur-up lazyload" alt="" /></Link></li>
+                                <li className="mb-0"><Link to="/" target="_blank"><img src="./assets/images/appstore.svg" className="blur-up lazyload" alt="" /></Link></li>
                             </ul>
                         </li>
                     </ul>

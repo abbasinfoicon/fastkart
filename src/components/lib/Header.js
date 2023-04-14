@@ -5,6 +5,7 @@ import Language from '../blocks/header/Language'
 import Currency from '../blocks/header/Currency'
 import CategoriesList from '../blocks/header/CategoriesList'
 import Menu from '../blocks/header/Menu'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
   return (
@@ -167,8 +168,8 @@ const Header = () => {
                           </div>
 
                           <div className="button-group">
-                            <a href="cart.html" className="btn btn-sm cart-button">View Cart</a>
-                            <a href="checkout.html" className="btn btn-sm cart-button theme-bg-color
+                            <a href="/cart" className="btn btn-sm cart-button">View Cart</a>
+                            <a href="/checkout" className="btn btn-sm cart-button theme-bg-color
                                                     text-white">Checkout</a>
                           </div>
                         </div>
@@ -189,15 +190,15 @@ const Header = () => {
                         <ul className="user-box-name">
                           <li className="product-box-contain">
                             <i></i>
-                            <a href="login.html">Log In</a>
+                            <Link to="/login">Log In</Link>
                           </li>
 
                           <li className="product-box-contain">
-                            <a href="sign-up.html">Register</a>
+                            <Link to="/register">Register</Link>
                           </li>
 
                           <li className="product-box-contain">
-                            <a href="forgot.html">Forgot Password</a>
+                            <Link to="/forgot-password">Forgot Password</Link>
                           </li>
                         </ul>
                       </div>
